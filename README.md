@@ -2,7 +2,7 @@
 
 ## 環境構築
 
-- terminal で実行
+### 初期セットアップ
 
 ```
 # DockerHubにログイン
@@ -16,3 +16,13 @@ docker run -v /$HOME/ds-python/work:/work -p 8888:8888 --name my-env datascienti
 ```
 
 - ブラウザで`localhost:8888`にアクセス
+
+### docker container の削除
+
+```
+# 停止しているコンテナ含む一覧表示
+docker ps -a
+
+# containerの削除
+docker rm <container ID>
+```
